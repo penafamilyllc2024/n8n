@@ -41,7 +41,7 @@ jobs:
       - name: Build full chain (no cache)
         uses: ./.github/actions/setup-nodejs
         with:
-          build-command: 'pnpm build:docker:full-chain'
+          build-command: 'pnpm build:docker:clean'
           enable-docker-cache: false
 
       - name: Verify n8n image starts
